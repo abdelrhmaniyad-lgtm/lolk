@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOIR | Minimalist Fashion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">NOIR</div>
+        <ul class="nav-links">
+            <li><a href="#featured">New Arrivals</a></li>
+            <li><a href="#categories">Collections</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <div class="cart-icon">Cart (0)</div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Elevate Your Essentials</h1>
+            <p>A new standard in modern, minimalist fashion.</p>
+            <button class="btn btn-outline" id="shop-now-btn">Shop Now</button>
+        </div>
+        <div class="hero-image-wrapper">
+            <img src="./images/hero.png" alt="Model wearing minimalist fashion" class="hero-image" id="hero-img">
+        </div>
+    </header>
+
+    <section id="categories" class="categories">
+        <div class="category-card">
+            <img src="./images/men.png" alt="Men's Collection">
+            <div class="category-overlay">
+                <h2>Menswear</h2>
+            </div>
+        </div>
+        <div class="category-card">
+            <img src="./images/women.png" alt="Women's Collection">
+            <div class="category-overlay">
+                <h2>Womenswear</h2>
+            </div>
+        </div>
+        <div class="category-card">
+            <img src="./images/accessories.png" alt="Accessories">
+            <div class="category-overlay">
+                <h2>Accessories</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured" class="featured-products">
+        <h2 class="section-title">Featured Pieces</h2>
+        <div class="grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="image-wrapper">
+                    <img src="./images/prod1.png" alt="Oversized Black Hoodie">
+                    <button class="btn-quick-add" onclick="addToCart('Oversized Black Hoodie')">Quick Add</button>
+                </div>
+                <div class="product-info">
+                    <h3>Oversized Black Hoodie</h3>
+                    <p class="price">$120</p>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="image-wrapper">
+                    <img src="./images/prod2.png" alt="Structured Gray Blazer">
+                    <button class="btn-quick-add" onclick="addToCart('Structured Gray Blazer')">Quick Add</button>
+                </div>
+                <div class="product-info">
+                    <h3>Structured Gray Blazer</h3>
+                    <p class="price">$180</p>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80" alt="Minimalist White Tee">
+                    <button class="btn-quick-add" onclick="addToCart('Minimalist White Tee')">Quick Add</button>
+                </div>
+                <div class="product-info">
+                    <h3>Minimalist White Tee</h3>
+                    <p class="price">$45</p>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&q=80" alt="Technical Cargo Pants">
+                    <button class="btn-quick-add" onclick="addToCart('Technical Cargo Pants')">Quick Add</button>
+                </div>
+                <div class="product-info">
+                    <h3>Technical Cargo Pants</h3>
+                    <p class="price">$140</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <h2>The NOIR Philosophy</h2>
+            <p>We believe in subtraction. Stripping away the unnecessary to reveal the essential. Our garments are crafted with precision, using high-quality materials to create modern, versatile pieces that endure the test of time.</p>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Join The Waitlist</h2>
+        <p>Get exclusive access to our newest drops and limited collections.</p>
+        <form id="newsletter-form" class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-solid">Subscribe</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>NOIR</h3>
+                <p>&copy; 2026 NOIR. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
